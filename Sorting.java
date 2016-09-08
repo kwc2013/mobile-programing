@@ -1,8 +1,8 @@
 package mobile;
 
-public class Sorthing {
+public class Sorting {
 	
-	 public static void sorting(int[] array){
+	 public void sorting(int[] array){
 		
 		int arrayLength = array.length;
 		int change;
@@ -40,6 +40,8 @@ public class Sorthing {
 		}
 	}
 	public static void main(String[] args) {
+		Sorting srt = new Sorting();
+		
 		int [] number = {5,4,1,3,9,6,8};
 		
 		for(int value:number){
@@ -47,7 +49,7 @@ public class Sorthing {
 			System.out.print(" ");
 		}
 		System.out.println();
-		sorting(number);
+		srt.sorting(number);
 		for(int value:number){
 			System.out.print(value);
 			System.out.print(" ");

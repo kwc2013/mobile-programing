@@ -2,7 +2,7 @@ package mobile;
 
 public class Searching {
 
-	public static void search3num(int[] array){
+	public void search3num(int[] array){
 		
 		int arrayLength = array.length;
 		int numberSearch = 3;
@@ -21,6 +21,8 @@ public class Searching {
 		
 	}
 	public static void main(String[] args) {
+		Searching srch = new Searching();
+		
 		int [] number = {5,4,1,3,9,6,8};
 		
 		for(int value:number){
@@ -28,7 +30,7 @@ public class Searching {
 			System.out.print(" ");
 		}
 		System.out.println();
-		search3num(number);
+		srch.search3num(number);
 	}
 }
 
